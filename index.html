@@ -1,195 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Website</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f6f8;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      text-align: center;
-    }
-
-    header {
-      background: linear-gradient(135deg, #0d6efd, #6c63ff);
-      color: white;
-      padding: 80px 20px;
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 1.3em;
-      margin-top: 10px;
-    }
-
-    select {
-      margin-top: 20px;
-      padding: 10px;
-      font-size: 1em;
-      border-radius: 8px;
-      border: none;
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      margin-bottom: 40px;
-      color: #0d6efd;
-    }
-
-    .services, .social {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .card, .social a {
-      background-color: white;
-      padding: 20px 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-decoration: none;
-      color: #0d6efd;
-      font-weight: bold;
-      transition: all 0.3s;
-      flex: 1 1 200px;
-      text-align: center;
-    }
-
-    .card:hover, .social a:hover {
-      background-color: #0d6efd;
-      color: white;
-    }
-
-    footer {
-      text-align: center;
-      margin: 40px 0;
-      font-size: 0.9em;
-      color: #777;
-    }
-
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Personal Website - Abdelkader</title>
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0; padding: 0; line-height: 1.6;
+  text-align: center;
+}
+header {
+  background: linear-gradient(135deg, #0d6efd, #6c63ff);
+  color: white;
+  padding: 60px 20px;
+}
+header h1 { font-size: 3em; margin: 0; }
+header p { font-size: 1.2em; margin-top: 10px; }
+select {
+  margin-top: 20px; padding: 10px; font-size: 1em;
+  border-radius: 8px; border: none;
+}
+section { padding: 50px 20px; max-width: 1000px; margin: auto; text-align: left; }
+h2 { margin-bottom: 20px; color: #0d6efd; text-align: center; }
+.card, .social a {
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: #0d6efd;
+  font-weight: bold;
+  transition: all 0.3s;
+  margin: 10px auto; max-width: 800px;
+}
+.card:hover, .social a:hover { background-color: #0d6efd; color: white; }
+footer { text-align: center; margin: 40px 0; font-size: 0.9em; color: #777; }
+</style>
 </head>
 <body>
 
-<!-- Header -->
 <header>
-  <h1 id="welcomeTitle">Welcome to my personal website!</h1>
-  <p id="welcomeText">I am Abdelkader, a cross-platform app developer.</p>
-  <p id="welcomePassion">My passion is turning ideas into useful digital applications and tools.</p>
-  <select id="languageSelect">
-    <option value="en">English</option>
-    <option value="ar">العربية</option>
-    <option value="fr">Français</option>
-  </select>
+<h1 id="welcomeTitle">Welcome to my personal website!</h1>
+<p id="welcomeText">I am Abdelkader, a cross-platform app developer.</p>
+<p id="welcomePassion">My passion is turning ideas into useful digital applications and tools.</p>
+<select id="languageSelect">
+  <option value="en">English</option>
+  <option value="ar">العربية</option>
+  <option value="fr">Français</option>
+</select>
 </header>
 
-<!-- Services -->
-<section class="services-section">
-  <h2 id="servicesTitle">My Skills & Services</h2>
-  <div class="services">
-    <div class="card" id="service1">Mobile App Development</div>
-    <div class="card" id="service2">Cross-Platform Programming</div>
-    <div class="card" id="service3">UI/UX Design</div>
-    <div class="card" id="service4">Digital Process Automation</div>
-    <div class="card" id="service5">Data Analysis</div>
-  </div>
+<section class="about">
+<h2 id="aboutTitle">✦ About Me</h2>
+<div class="card" id="aboutText">
+I am Abdelkader, a cross-platform app developer. My passion is turning ideas into real applications and tools that benefit people. I enjoy sharing my knowledge with beginners and developers and creating content to help anyone who loves programming and developing their projects.
+</div>
 </section>
 
-<!-- Contact -->
+<section class="support">
+<h2 id="supportTitle">✦ Why Your Support Matters</h2>
+<div class="card" id="supportText">
+Every contribution—even a small one—opens opportunities:
+- We spend more time developing and creating.
+- Share higher-quality code, books, and designs.
+- Innovate new ideas and projects that benefit everyone.
+You are not just supporters, you are partners in this journey, fueling my motivation to continue. 🚀
+</div>
+</section>
+
+<section class="extras">
+<h2 id="extrasTitle">💡 Extras (Mini Services)</h2>
+<div class="card" id="extrasText">
+Small services available on demand:
+- Build a small web page.
+- Technical consultation via Zoom/Meet.
+- Send ready code or PDF files.
+- Bug fixing.
+- Convert design (screenshot) to code.
+- Set up development environment (Android Studio / VS Code).
+- Personal advice: How to start freelancing or launch your project.
+</div>
+</section>
+
+<section class="store">
+<h2 id="storeTitle">📂 Store (Digital Products)</h2>
+<div class="card" id="storeText">
+Ready-to-download digital products:
+- PDF books (e.g., Learn Flutter app development in a week)
+- Ready-made app templates (recipes, e-commerce, blogs…)
+- Snippets / Code (Google, Facebook, PayPal login)
+- UI/UX designs for modern app screens
+- Music, sound effects, and icons ready to use
+</div>
+</section>
+
+<section class="posts">
+<h2 id="postsTitle">📝 Posts (Content & Exclusive)</h2>
+<div class="card" id="postsText">
+Open articles and programming tips for everyone. Exclusive content (codes, in-depth tutorials, special files) available only to my supporters. Updates on new projects regularly.
+</div>
+</section>
+
+<section class="journey">
+<h2 id="journeyTitle">✦ Together in This Journey</h2>
+<div class="card" id="journeyText">
+Support is not just financial help, but a true partnership. Together we can build a small community full of creativity, encouragement, and knowledge sharing. Every step we take together adds meaning and value. ❤️
+</div>
+</section>
+
 <section class="social-section">
-  <h2 id="contactTitle">Contact Me</h2>
-  <div class="social">
-    <a href="https://github.com/kaddourpikadre-bot" target="_blank" id="socialGitHub">GitHub</a>
-    <a href="https://www.linkedin.com/in/kaddourpikadre" target="_blank" id="socialLinkedIn">LinkedIn</a>
-    <a href="https://twitter.com/" target="_blank" id="socialTwitter">Twitter</a>
-    <a href="mailto:kaddourpikadre@gmail.com" target="_blank" id="socialEmail">Email</a>
-  </div>
+<h2 id="contactTitle">Contact Me</h2>
+<div class="social">
+<a href="https://github.com/kaddourpikadre-bot" target="_blank" id="socialGitHub">GitHub</a>
+<a href="https://www.linkedin.com/in/kaddourpikadre" target="_blank" id="socialLinkedIn">LinkedIn</a>
+<a href="https://twitter.com/" target="_blank" id="socialTwitter">Twitter</a>
+<a href="mailto:abdulkader@example.com" target="_blank" id="socialEmail">Email</a>
+</div>
 </section>
 
 <footer id="footer">
-  &copy; 2025 Abdelkader
+&copy; 2025 Abdelkader
 </footer>
 
 <script>
 const select = document.getElementById('languageSelect');
-
 const content = {
-  en: {
-    welcomeTitle: "Welcome to my personal website!",
-    welcomeText: "I am Abdelkader, a cross-platform app developer.",
-    welcomePassion: "My passion is turning ideas into useful digital applications and tools.",
-    servicesTitle: "My Skills & Services",
-    service1: "Mobile App Development",
-    service2: "Cross-Platform Programming",
-    service3: "UI/UX Design",
-    service4: "Digital Process Automation",
-    service5: "Data Analysis",
-    contactTitle: "Contact Me",
-    socialGitHub: "GitHub",
-    socialLinkedIn: "LinkedIn",
-    socialTwitter: "Twitter",
-    socialEmail: "Email",
-    footer: "© 2025 Abdelkader"
-  },
-  ar: {
-    welcomeTitle: "أهلاً وسهلاً بك في موقعي!",
-    welcomeText: "أنا عبد القادر، مبرمج تطبيقات متعددة المنصات.",
-    welcomePassion: "شغفي هو تحويل الأفكار إلى تطبيقات وأدوات رقمية مفيدة.",
-    servicesTitle: "خدماتي ومهاراتي",
-    service1: "تطوير تطبيقات الهواتف",
-    service2: "برمجة متعددة المنصات",
-    service3: "تصميم واجهات المستخدم",
-    service4: "أتمتة العمليات الرقمية",
-    service5: "تحليل البيانات",
-    contactTitle: "تواصل معي",
-    socialGitHub: "جيت هاب",
-    socialLinkedIn: "لينكد إن",
-    socialTwitter: "تويتر",
-    socialEmail: "البريد الإلكتروني",
-    footer: "© 2025 عبد القادر"
-  },
-  fr: {
-    welcomeTitle: "Bienvenue sur mon site web !",
-    welcomeText: "Je suis Abdelkader, développeur d'applications multiplateformes.",
-    welcomePassion: "Ma passion est de transformer les idées en applications et outils numériques utiles.",
-    servicesTitle: "Mes compétences et services",
-    service1: "Développement d'applications mobiles",
-    service2: "Programmation multiplateforme",
-    service3: "Conception UI/UX",
-    service4: "Automatisation des processus numériques",
-    service5: "Analyse de données",
-    contactTitle: "Contactez-moi",
-    socialGitHub: "GitHub",
-    socialLinkedIn: "LinkedIn",
-    socialTwitter: "Twitter",
-    socialEmail: "Email",
-    footer: "© 2025 Abdelkader"
-  }
-};
+en: {
+welcomeTitle:"Welcome to my personal website!",
+welcomeText:"I am Abdelkader, a cross-platform app developer.",
+welcomePassion:"My passion is turning ideas into useful digital applications and tools.",
+aboutTitle:"✦ About Me",
+aboutText:"I am Abdelkader, a cross-platform app developer. My passion is turning ideas into real applications and tools that benefit people. I enjoy sharing my knowledge with beginners and developers and creating content to help anyone who loves programming and developing their projects.",
+supportTitle:"✦ Why Your Support Matters",
+supportText:"Every contribution—even a small one—opens opportunities:\n- We spend more time developing and creating.\n- Share higher-quality code, books, and designs.\n- Innovate new ideas and projects that benefit everyone.\nYou are not just supporters, you are partners in this journey, fueling my motivation to continue. 🚀",
+extrasTitle:"💡 Extras (Mini Services)",
+extrasText:"Small services available on demand:\n- Build a small web page.\n- Technical consultation via Zoom/Meet.\n- Send ready code or PDF files.\n- Bug fixing.\n- Convert design (screenshot) to code.\n- Set up development environment (Android Studio / VS Code).\n- Personal advice: How to start freelancing or launch your project.",
+storeTitle:"📂 Store (Digital Products)",
+storeText:"Ready-to-download digital products:\n- PDF books (e.g., Learn Flutter app development in a week)\n- Ready-made app templates (recipes, e-commerce, blogs…)\n- Snippets / Code (Google, Facebook, PayPal login)\n- UI/UX designs for modern app screens\n- Music, sound effects, and icons ready to use",
+postsTitle:"📝 Posts (Content & Exclusive)",
+postsText:"Open articles and programming tips for everyone. Exclusive content (codes, in-depth tutorials, special files) available only to my supporters. Updates on new projects regularly.",
+journeyTitle:"✦ Together in This Journey",
+journeyText:"Support is not just financial help, but a true partnership. Together we can build a small community full of creativity, encouragement, and knowledge sharing. Every step we take together adds meaning and value. ❤️",
+contactTitle:"Contact Me",
+socialGitHub:"GitHub",
+socialLinkedIn:"LinkedIn",
+socialTwitter:"Twitter",
+socialEmail:"Email",
+footer:"© 2025 Abdelkader"
+},
+ar: {
+welcomeTitle:"أهلاً وسهلاً بك في موقعي!",
+welcomeText:"أنا عبد القادر، مبرمج تطبيقات متعددة المنصات.",
+welcomePassion:"شغفي هو تحويل الأفكار إلى تطبيقات وأدوات رقمية مفيدة.",
+aboutTitle:"✦ من أنا؟",
+aboutText:"أنا عبد القادر، مبرمج تطبيقات متعددة المنصات. شغفي هو تحويل الأفكار إلى تطبيقات
 
-select.addEventListener('change', () => {
-  const lang = select.value;
-  for (const key in content[lang]) {
-    const el = document.getElementById(key);
-    if (el) el.textContent = content[lang][key];
-  }
-});
-</script>
-
-</body>
-</html>
 

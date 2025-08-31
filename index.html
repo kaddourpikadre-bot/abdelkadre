@@ -87,10 +87,10 @@
 
 <!-- Header -->
 <header>
-  <h1 id="welcome-title">Welcome to my personal website!</h1>
-  <p id="welcome-text">I am Abdelkader, a cross-platform app developer.</p>
-  <p id="welcome-passion">My passion is turning ideas into useful digital applications and tools.</p>
-  <select id="language-select">
+  <h1 id="welcomeTitle">Welcome to my personal website!</h1>
+  <p id="welcomeText">I am Abdelkader, a cross-platform app developer.</p>
+  <p id="welcomePassion">My passion is turning ideas into useful digital applications and tools.</p>
+  <select id="languageSelect">
     <option value="en">English</option>
     <option value="ar">العربية</option>
     <option value="fr">Français</option>
@@ -99,7 +99,7 @@
 
 <!-- Services -->
 <section class="services-section">
-  <h2 id="services-title">My Skills & Services</h2>
+  <h2 id="servicesTitle">My Skills & Services</h2>
   <div class="services">
     <div class="card" id="service1">Mobile App Development</div>
     <div class="card" id="service2">Cross-Platform Programming</div>
@@ -111,12 +111,12 @@
 
 <!-- Contact -->
 <section class="social-section">
-  <h2 id="contact-title">Contact Me</h2>
+  <h2 id="contactTitle">Contact Me</h2>
   <div class="social">
-    <a href="https://github.com/kaddourpikadre-bot" target="_blank" id="social-github">GitHub</a>
-    <a href="https://www.linkedin.com/in/kaddourpikadre" target="_blank" id="social-linkedin">LinkedIn</a>
-    <a href="https://twitter.com/" target="_blank" id="social-twitter">Twitter</a>
-    <a href="mailto:abdulkader@example.com" target="_blank" id="social-email">Email</a>
+    <a href="https://github.com/kaddourpikadre-bot" target="_blank" id="socialGitHub">GitHub</a>
+    <a href="https://www.linkedin.com/in/kaddourpikadre" target="_blank" id="socialLinkedIn">LinkedIn</a>
+    <a href="https://twitter.com/" target="_blank" id="socialTwitter">Twitter</a>
+    <a href="mailto:kaddourpikadre@gmail.com" target="_blank" id="socialEmail">Email</a>
   </div>
 </section>
 
@@ -125,7 +125,7 @@
 </footer>
 
 <script>
-const select = document.getElementById('language-select');
+const select = document.getElementById('languageSelect');
 
 const content = {
   en: {
@@ -140,5 +140,56 @@ const content = {
     service5: "Data Analysis",
     contactTitle: "Contact Me",
     socialGitHub: "GitHub",
+    socialLinkedIn: "LinkedIn",
+    socialTwitter: "Twitter",
+    socialEmail: "Email",
+    footer: "© 2025 Abdelkader"
+  },
+  ar: {
+    welcomeTitle: "أهلاً وسهلاً بك في موقعي!",
+    welcomeText: "أنا عبد القادر، مبرمج تطبيقات متعددة المنصات.",
+    welcomePassion: "شغفي هو تحويل الأفكار إلى تطبيقات وأدوات رقمية مفيدة.",
+    servicesTitle: "خدماتي ومهاراتي",
+    service1: "تطوير تطبيقات الهواتف",
+    service2: "برمجة متعددة المنصات",
+    service3: "تصميم واجهات المستخدم",
+    service4: "أتمتة العمليات الرقمية",
+    service5: "تحليل البيانات",
+    contactTitle: "تواصل معي",
+    socialGitHub: "جيت هاب",
+    socialLinkedIn: "لينكد إن",
+    socialTwitter: "تويتر",
+    socialEmail: "البريد الإلكتروني",
+    footer: "© 2025 عبد القادر"
+  },
+  fr: {
+    welcomeTitle: "Bienvenue sur mon site web !",
+    welcomeText: "Je suis Abdelkader, développeur d'applications multiplateformes.",
+    welcomePassion: "Ma passion est de transformer les idées en applications et outils numériques utiles.",
+    servicesTitle: "Mes compétences et services",
+    service1: "Développement d'applications mobiles",
+    service2: "Programmation multiplateforme",
+    service3: "Conception UI/UX",
+    service4: "Automatisation des processus numériques",
+    service5: "Analyse de données",
+    contactTitle: "Contactez-moi",
+    socialGitHub: "GitHub",
+    socialLinkedIn: "LinkedIn",
+    socialTwitter: "Twitter",
+    socialEmail: "Email",
+    footer: "© 2025 Abdelkader"
+  }
+};
 
+select.addEventListener('change', () => {
+  const lang = select.value;
+  for (const key in content[lang]) {
+    const el = document.getElementById(key);
+    if (el) el.textContent = content[lang][key];
+  }
+});
+</script>
+
+</body>
+</html>
 

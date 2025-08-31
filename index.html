@@ -1,15 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>موقعي الشخصي - عبد القادر</title>
+  <title>My Personal Website</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f4f6f8;
-      color: #333;
       margin: 0;
       padding: 0;
       line-height: 1.6;
@@ -47,12 +45,11 @@
     }
 
     h2 {
-      text-align: center;
       margin-bottom: 40px;
       color: #0d6efd;
     }
 
-    .services, .projects, .social {
+    .services, .social {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -77,14 +74,6 @@
       color: white;
     }
 
-    .social a svg {
-      vertical-align: middle;
-      width: 20px;
-      height: 20px;
-      margin-right: 8px;
-      fill: currentColor;
-    }
-
     footer {
       text-align: center;
       margin: 40px 0;
@@ -96,85 +85,60 @@
 </head>
 <body>
 
-<!-- قسم الترحيب متعدد اللغات -->
+<!-- Header -->
 <header>
-  <h1 id="welcome-title">Welcome to my website!</h1>
+  <h1 id="welcome-title">Welcome to my personal website!</h1>
   <p id="welcome-text">I am Abdelkader, a cross-platform app developer.</p>
-  
+  <p id="welcome-passion">My passion is turning ideas into useful digital applications and tools.</p>
   <select id="language-select">
     <option value="en">English</option>
     <option value="ar">العربية</option>
     <option value="fr">Français</option>
-    <option value="es">Español</option>
-    <option value="de">Deutsch</option>
   </select>
 </header>
 
-<!-- الخدمات والمهارات -->
+<!-- Services -->
 <section class="services-section">
-  <h2>الخدمات والمهارات</h2>
+  <h2 id="services-title">My Skills & Services</h2>
   <div class="services">
-    <div class="card">تطوير تطبيقات الهواتف</div>
-    <div class="card">برمجة متعددة المنصات</div>
-    <div class="card">تصميم واجهات مستخدم جذابة</div>
-    <div class="card">أتمتة العمليات الرقمية</div>
-    <div class="card">تحليل البيانات</div>
+    <div class="card" id="service1">Mobile App Development</div>
+    <div class="card" id="service2">Cross-Platform Programming</div>
+    <div class="card" id="service3">UI/UX Design</div>
+    <div class="card" id="service4">Digital Process Automation</div>
+    <div class="card" id="service5">Data Analysis</div>
   </div>
 </section>
 
-<!-- المشاريع -->
-<section class="projects-section">
-  <h2>مشاريعي</h2>
-  <div class="projects">
-    <a class="card" href="#" target="_blank">مشروع 1</a>
-    <a class="card" href="#" target="_blank">مشروع 2</a>
-    <a class="card" href="#" target="_blank">مشروع 3</a>
-    <a class="card" href="#" target="_blank">مشروع 4</a>
-  </div>
-</section>
-
-<!-- التواصل الاجتماعي -->
+<!-- Contact -->
 <section class="social-section">
-  <h2>تواصل معي</h2>
+  <h2 id="contact-title">Contact Me</h2>
   <div class="social">
-    <a href="https://github.com/kaddourpikadre-bot" target="_blank">
-      GitHub
-    </a>
-    <a href="https://www.linkedin.com/in/kaddourpikadre" target="_blank">
-      LinkedIn
-    </a>
-    <a href="https://twitter.com/" target="_blank">
-      Twitter
-    </a>
-    <a href="mailto:abdulkader@example.com" target="_blank">
-      Email
-    </a>
+    <a href="https://github.com/kaddourpikadre-bot" target="_blank" id="social-github">GitHub</a>
+    <a href="https://www.linkedin.com/in/kaddourpikadre" target="_blank" id="social-linkedin">LinkedIn</a>
+    <a href="https://twitter.com/" target="_blank" id="social-twitter">Twitter</a>
+    <a href="mailto:abdulkader@example.com" target="_blank" id="social-email">Email</a>
   </div>
 </section>
 
-<footer>
-  &copy; 2025 عبد القادر
+<footer id="footer">
+  &copy; 2025 Abdelkader
 </footer>
 
 <script>
-  const title = document.getElementById('welcome-title');
-  const text = document.getElementById('welcome-text');
-  const select = document.getElementById('language-select');
+const select = document.getElementById('language-select');
 
-  const messages = {
-    en: { title: "Welcome to my website!", text: "I am Abdelkader, a cross-platform app developer." },
-    ar: { title: "أهلاً وسهلاً بك في موقعي!", text: "أنا عبد القادر، مبرمج تطبيقات متعددة المنصات." },
-    fr: { title: "Bienvenue sur mon site web !", text: "Je suis Abdelkader, développeur d'applications multiplateformes." },
-    es: { title: "¡Bienvenido a mi sitio web!", text: "Soy Abdelkader, desarrollador de aplicaciones multiplataforma." },
-    de: { title: "Willkommen auf meiner Website!", text: "Ich bin Abdelkader, plattformübergreifender App-Entwickler." }
-  };
+const content = {
+  en: {
+    welcomeTitle: "Welcome to my personal website!",
+    welcomeText: "I am Abdelkader, a cross-platform app developer.",
+    welcomePassion: "My passion is turning ideas into useful digital applications and tools.",
+    servicesTitle: "My Skills & Services",
+    service1: "Mobile App Development",
+    service2: "Cross-Platform Programming",
+    service3: "UI/UX Design",
+    service4: "Digital Process Automation",
+    service5: "Data Analysis",
+    contactTitle: "Contact Me",
+    socialGitHub: "GitHub",
 
-  select.addEventListener('change', () => {
-    const lang = select.value;
-    title.textContent = messages[lang].title;
-    text.textContent = messages[lang].text;
-  });
-</script>
 
-</body>
-</html>
